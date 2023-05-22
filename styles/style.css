@@ -11,7 +11,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #4b454b;
+    background: #584e58;
     overflow: hidden;
     /* animation: bgs 5.45s; */
 }
@@ -55,10 +55,68 @@ body {
     
 } */
 
+#overlay_right {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}
+
+#overlay_left {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    
+}
+
+
+
+#star_tr {
+    position: absolute;
+    right: -31vh;
+    top: -15vh;
+    width: 60vh;
+    z-index: 8;
+    animation: rightspin 3s linear infinite normal;
+    transform: rotate(0);
+}
+
+@keyframes rightspin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#star_bl {
+    position: absolute;
+    bottom: -12vh;
+    left: -21vh;
+    width: 40vh;
+    z-index: 8;
+    animation: rightspin 3s linear infinite normal;
+    transform: rotate(0);
+}
+
+@keyframes leftspin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 #playby {
     height: 100%;
     position: absolute;
     left: 3%;
+    z-index: 1;
     /* animation: pbf 5.45s; */
 }
 /* 
