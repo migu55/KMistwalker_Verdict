@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 html {
     height: 100%;
     width: 100%;
@@ -12,7 +11,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #96D3EF;
+    background: #4b454b;
     overflow: hidden;
     /* animation: bgs 5.45s; */
 }
@@ -104,13 +103,9 @@ body {
 
 #name {
     position: relative;
-    margin: 0% 0 -5% 0;
+    margin: 5% 0 -10% 0;
     max-width: 100%;
-    max-height: 100vh;
-    object-fit: contain;
-    object-position: 50% 50%;
-    width: 80vh;
-    font-size: 5vw;
+    width: 100vh;
     color: #FFE32C;
     /* animation: namef 10.9s; */
 }
@@ -143,11 +138,14 @@ body {
 } */
 
 #text {
-    font-size: 2vw;
-    font-family: 'Edu TAS Beginner', cursive;
-    color: #FF81C2;
+    font-size: 1vw;
+    font-family: 'Covered By Your Grace', cursive;
+    color: #e3cdff;
+    opacity: 80%;
     /* animation: descf 10.9s; */
     text-align: center;
+    font-style: italic;
+    
 }
 
 /* @keyframes descf {
@@ -174,18 +172,18 @@ body {
 
 #break1 {
     position: relative;
-    margin: -35% 0 -15% 0;
+    margin: -15% 0 -20% 0;
     object-fit: contain;
     object-position: 50% 50%;
-    /* width: 60vh; */
+    width: 60vh;
 }
 
 #break2 {
     position: relative;
-    margin: -5% -2% -5% 0;
+    margin-top: -5%;
     object-fit: contain;
     object-position: 50% 50%;
-    /* width: 40vh; */
+    width: 30vh;
 }
 
 
