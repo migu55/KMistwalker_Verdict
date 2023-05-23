@@ -13,64 +13,100 @@ body {
     padding: 0;
     background: #584e58;
     overflow: hidden;
-    /* animation: bgs 5.45s; */
+    animation: bgs 25s;
 }
 
-/* 
+
 @keyframes bgs {
-    0% {
-        background: #FAB3D8;
+    0%, 51% {
+        background: #FFFFFF;
     }
 
-    17.499% {
-        background: #FAB3D8;
-    }
-    17.5% {
-        background: #FFE95F;
-    }
-
-    29.999% {
-        background: #FFE95F;
-    }
-    30% {
-        background: #96D3EF;
-    }
-
-    42.499% {
-        background: #96D3EF;
-    }
-    42.5% {
+    51.1%, 54% {
         background: #000000;
     }
 
-    55% {
-        background: #000000;
+    54.1%, 55% {
+        background: #FFFFFF;
     }
-    60% {
-        background: #ffffff;
+
+    60%, 74.9% {
+        background: #584e58;
+    }
+
+    75%, 83% {
+        background: #a893a8;
+    }
+
+    84% {
+        background: #584e58;
     }
 
     100% {
     }
     
-} */
+}
+
+#intro {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    opacity: 0%;
+    animation: introfade 25s;
+}
+
+@keyframes introfade {
+    0%, 48% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+
+    }
+}
 
 #overlay_right {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    z-index: 9;
+    z-index: 7;
+    animation: or 25s;
+    right: 0%;
+}
+
+@keyframes or {
+    0%, 56% {
+        right: -100%;
+    }
+
+    61% {
+        right: 0%;
+    }
 }
 
 #overlay_left {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    z-index: 9;
-    
+    z-index: 6;
+    animation: ol 25s;
+    left: 0%;
 }
 
+@keyframes ol {
+    0%, 58% {
+        left: -100%;
+    }
 
+    61% {
+        left: 0%;
+    }
+}
 
 #star_tr {
     position: absolute;
@@ -78,8 +114,18 @@ body {
     top: -15vh;
     width: 60vh;
     z-index: 8;
-    animation: rightspin 3s linear infinite normal;
+    animation: rightspin 3s linear infinite normal, srmove 25s linear;
     transform: rotate(0);
+}
+
+@keyframes srmove {
+    0%, 68% {
+        right: 200vh;
+    }
+
+    75% {
+        right: -31vh;
+    }
 }
 
 @keyframes rightspin {
@@ -97,9 +143,19 @@ body {
     bottom: -12vh;
     left: -21vh;
     width: 40vh;
-    z-index: 8;
-    animation: rightspin 3s linear infinite normal;
+    z-index: 9;
+    animation: leftspin 3s linear infinite normal, slmove 25s linear;
     transform: rotate(0);
+}
+
+@keyframes slmove {
+    0%, 68% {
+        left: 200vh;
+    }
+
+    75% {
+        left: -21vh;
+    }
 }
 
 @keyframes leftspin {
@@ -117,31 +173,21 @@ body {
     position: absolute;
     left: 3%;
     z-index: 1;
-    /* animation: pbf 5.45s; */
+    animation: pbf 25s;
 }
-/* 
+
 @keyframes pbf {
-    0% {
+    0%, 72% {
         left: -5%;
         opacity: 0;
     }
 
-    67.5% {
-        left: -5%;
-        opacity: 0;
-    }
-
-    82.5% {
-        left: 0%;
-        opacity: 100%;
-    }
-
-    100% {
-        left: 0%;
+    75% {
+        left: 3%;
         opacity: 100%;
     }
     
-} */
+}
 
 #content {
     display: table-cell;
@@ -165,68 +211,42 @@ body {
     max-width: 100%;
     width: 100vh;
     color: #FFE32C;
-    /* animation: namef 10.9s; */
+    animation: namef 25s;
+    opacity: 100%;
 }
-/* 
+
 @keyframes namef {
-    0% {
-        top: 25%;
-        opacity: 0;
+    0%, 62% {
+        opacity: 0%;
     }
 
-    42.25% {
-        top: 25%;
-        opacity: 0;
-    }
-
-    47.75% {
-        top: 25%;
+    68% {
         opacity: 100%;
-    }
-
-    52.5% {
-        top: 0%;
-        opacity: 100%;
-}
-
-    100% {
-
     }
     
-} */
+}
 
 #text {
     font-size: 1vw;
     font-family: 'Covered By Your Grace', cursive;
     color: #e3cdff;
     opacity: 80%;
-    /* animation: descf 10.9s; */
+    animation: descf 25s;
     text-align: center;
     font-style: italic;
     
 }
 
-/* @keyframes descf {
-    0% {
-        left: 100%;
-        opacity: 0;
+@keyframes descf {
+    0%, 65% {
+        opacity: 0%;
     }
 
-    55% {
-        left: 100%;
-        opacity: 0;
-    }
-
-    61.25% {
-        left: 50%;
-        opacity: 100%;
-}
-
-    100% {
-
+    68% {
+        opacity: 80%;
     }
     
-} */
+}
 
 #break1 {
     position: relative;
